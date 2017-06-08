@@ -34,7 +34,6 @@ Let's remember to test our code.  While the behaviors of the `RubyRacer` class a
 ### Release 1:  Add Features *(optional)*
 What would make this game more fun?  Now that the basic version of the game is working, let's see if we can't spice it up a little bit.  Below are some suggestions, but we're free to add our own features as well.
 
-- Why limit the game to two players always labeled `a` and `b`?  Let's allow any number of players to sign up for a race and select their own symbols.
 - Instead of using single-letter symbols for each player, we could use ASCII art ([vehicle examples](https://sites.google.com/site/asciisandbox/art/vehicles), [convert words](https://github.com/miketierney/artii)).
 - We could make the game more like Chutes and Ladders, providing power-ups to move a player forward or power-downs to slow them or move them backward.
 - We could make the game less random, giving players more control over how they move across the board.
