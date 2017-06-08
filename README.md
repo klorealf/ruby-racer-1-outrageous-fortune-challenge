@@ -9,26 +9,26 @@ Vroom vroom! We're going to build a simple game called *Ruby Racer*. This is a g
 
 The game is a race between two players.  Both players start at the beginning of the track, side-by-side.  Players take turns rolling a die and advancing along the track until one of them reaches the end of the track and wins the game.  (See Figure 1.)
 
-Some challenges in building our game will be (1) managing the state of the game (e.g., keeping track of player positions) and (2) transforming data from one structure to another (e.g. transforming the game data into a printable board).
+Some challenges in building our game will be (1) determining appropriate data structures, (2) managing the state of the game (e.g., keeping track of player positions), and (3) transforming data from one structure to another (e.g. transforming the game data into a printable board).
 
 
 ### Code Base
-In this challenge, we're going to begin with some provided code.  We have some fully functional code:  a `Die` class that represents a real-world, rollable die and then a few methods that will help us update the screen (see `die.rb` and `reset_screen.rb`.
+In this challenge, we're going to begin with some provided code.  We have some fully functional code.  We have a `die_roll` method that simulates rolling a die and then a few methods that will help us update the screen to simulate players moving down the track.
 
-We also have some partially completed code:  the `RubyRacer` class where we'll find a number of empty method definitions with comments about what they should do. We'll need to actually write the bodies of these methods ourselves (see `ruby_racer.rb`).
+We also have the driver code in `runner.rb`.  This code provides a basic outline for running a game of Ruby Racer.  It calls some methods, which we'll need to write.  For each of these methods, an empty method definition and comments about what it should do are provided in `ruby_racer.rb`.
 
-And finally we have the driver code in `runner.rb`.  This code provides a basic outline for running a game of Ruby Racer.
-
-We may alter the provided code as necessary; however, the code base is generally well-written, and we should pay attention to the style, what methods exist, what their inputs and return values are, and how they segment the actions necessary to play the game.
+As we read through the code in `runner.rb`, pay attention to the style, what methods exist, what their inputs and return values are, and how they segment the actions necessary to play the game.
 
 
 ## Releases
-### Release 0: Make the Game Playable
-We need to build on the provided code base to create a working version of *Ruby Racer*.  Most of the work will be in filling out the `RubyRacer` class, but we might want or need to change some of the other code as well.
+### Release 0: Complete the Game
+Attention, race fans:  it's time for *Ruby Racer*!  We need to create a working version of the game.  This will involve filling out the empty method definitions in `ruby_racer.rb`.
 
-Let's remember to test our code.  While the behaviors of the `RubyRacer` class are described in comments related to each method, they are not documented in our test suite.
+There is an empty method definition for each method called in `runner.rb`, but that doesn't mean those are all the methods we should have.  Remember, we want to write methods that do one thing.
 
-*Note:* We do not need to test the code in `runner.rb` or `reset_screen.rb`.
+Also, let's remember to test our code.  While the behaviors of the methods called in the runner file are described in comments, they are not documented in our test suite.  We do not need to test the code in `runner.rb` or any of the provided methods (e.g., `reset_screen`).
+
+*Note:* Do not edit `runner.rb`.
 
 
 ### Release 1:  Add Features *(optional)*
@@ -39,7 +39,7 @@ What would make this game more fun?  Now that the basic version of the game is w
 - We could make the game more like Chutes and Ladders, providing power-ups to move a player forward or power-downs to slow them or move them backward.
 - We could make the game less random, giving players more control over how they move across the board.
 
-*Note:*  Let's try to test our additions if we can. If not, it's ok, but we should reflect on why we couldn't test these behaviors and add it in a `tests.md` file.
+*Note:*  If we need to, we can edit `runner.rb` in this release.
 
 
 ## Conclusion
