@@ -1,6 +1,4 @@
-require_relative 'die_roll'
-require_relative 'ruby_racer'
-require_relative 'reset_screen'
+require_relative "ruby_racer"
 
 
 players = [:a, :b]
