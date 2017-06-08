@@ -4,32 +4,29 @@ require_relative 'reset_screen'
 
 
 players = [:a, :b]
-
-game = RubyRacer.new(players, die)
+race = build_race(players)
 
 # Clear the screen and print the board
 # with players in their starting positions.
 # Then pause, so users can see the starting board.
 reset_screen
-puts game.board_visualization
+puts render(race)
 sleep(1)
 
-# Play the game.
-until game.finished?
-  # Do this each round until the game is finished.
+# Run the race.
+until finished?(race)
+  # Do this each round until the race is finished.
 
   # Move each player forward.
-  game.players.each do |player|
-    game.advance_player(player)
-  end
+  advance_players(race)
 
   # Now that each player has moved,
   # reprint the board with the new player positions
   # and pause so users can see the updated board.
   reset_screen
-  puts game.board_visualization
+  puts render(race)
   sleep(0.2)
 end
 
-# Once the game is finished, report the winner.
-puts "Player '#{game.winner}' wins!"
+# Once the race is finished, report the winner.
+puts "Player '#{winner(race)}' wins!"
