@@ -3,7 +3,7 @@ require_relative 'ruby_racer'
 require_relative 'reset_screen'
 
 
-players = [:a, :b]
+players = ARGV.length > 0 ? ARGV.map(&:to_sym) : [:a, :b]
 die = Die.new
 
 game = RubyRacer.new(players, die)
