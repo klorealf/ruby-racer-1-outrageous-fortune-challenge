@@ -17,7 +17,7 @@ In this challenge, we're going to begin with some provided code.  We have some f
 
 We also have some partially completed code:  the `RubyRacer` class where we'll find a number of empty method definitions with comments about what they should do. We'll need to actually write the bodies of these methods ourselves (see `ruby_racer.rb`).
 
-And finally we have the driver code in `runner.rb`.  This code provides a basic outline for running a game of Ruby Racer.
+And finally we have the driver code in `runner.rb`.  This code provides a basic outline for running a game of Ruby Racer. To start things off, execute `ruby runner.rb`. You'll see that things aren't _quite_ working. Your goal is to make things work by filling out the `ruby_racer.rb` file's code. The `runner` defaults to creating 2 competitors. When your code is complete you'll _also_ be able to invoke the runner with an arbitrary number of competitors by invoking the runner with a list of names e.g. `ruby runner.rb lothric farron irithyll londor`.
 
 We may alter the provided code as necessary; however, the code base is generally well-written, and we should pay attention to the style, what methods exist, what their inputs and return values are, and how they segment the actions necessary to play the game.
 
