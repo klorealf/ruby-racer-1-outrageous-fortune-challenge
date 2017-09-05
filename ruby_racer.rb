@@ -11,14 +11,18 @@ class RubyRacer
   # Returns +true+ if one of the players has reached
   # the finish line, +false+ otherwise
   def finished?
+    @player_position.last >= @length
   end
 
   # Returns the winner if there is one, +nil+ otherwise
   def winner
+
   end
 
   # Rolls the die and advances +player+ accordingly
   def advance_player(player)
+    player_index = @players.index(player)
+    @player_position[player_index] += @die.roll
   end
 
   # Returns the current state of the game as a string
