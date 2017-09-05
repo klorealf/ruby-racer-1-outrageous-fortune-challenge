@@ -32,6 +32,6 @@ class RubyRacer
     players.each do |player|
       player.index 
       player_position = [@player_position[index]]
-      
+      end
   end
 end
