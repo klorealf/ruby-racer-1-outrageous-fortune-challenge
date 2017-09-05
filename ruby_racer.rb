@@ -2,6 +2,10 @@ class RubyRacer
   attr_reader :players, :die, :length
 
   def initialize(players, die, length = 30)
+    @players = players
+    @die = die
+    @length = length
+    @player_position = []
   end
 
   # Returns +true+ if one of the players has reached
