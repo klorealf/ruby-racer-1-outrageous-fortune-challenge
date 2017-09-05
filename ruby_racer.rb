@@ -29,5 +29,9 @@ class RubyRacer
   # that can be printed on the command line.
   # The board should have the same dimensions each time.
   def board_visualization
+    players.each do |player|
+      player.index 
+      player_position = [@player_position[index]]
+      
   end
 end
