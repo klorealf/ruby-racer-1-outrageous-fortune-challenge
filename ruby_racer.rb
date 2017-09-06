@@ -44,8 +44,8 @@ class RubyRacer
     lane2 = ""
     lane1 << " |" * (@length)
     lane2 << " |" * (@length)
-    lane1 << "       finish"
-    lane2 << "       finish"
+    lane1 << "           finish"
+    lane2 << "           finish"
     lane1[player1_index..player1_index+1] = "a|"
     lane2[player2_index..player2_index+1] = "b|"
     return lane1, lane2
